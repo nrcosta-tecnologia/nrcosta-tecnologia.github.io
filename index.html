@@ -890,6 +890,15 @@
   }
 
   /* ───────── DIFERENCIAIS ───────── */
+  .rt{background: var(--bg-warm)}
+  .rt-how{margin-top: 56px; display:grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start}
+  .rt-how h3{font-size: clamp(22px, 2.2vw, 26px)}
+  .rt-how ul{list-style:none; margin:0; padding:0; border-top: 1px solid var(--line)}
+  .rt-how li{padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 16px; line-height: 1.55; color: var(--ink-2); max-width: 52ch}
+  .rt-cta{margin-top: 40px; display:flex; flex-wrap:wrap; align-items:center; gap: 20px 28px}
+  .rt-cta p{margin: 0; font-size: 18px; color: var(--ink-2)}
+  @media (max-width: 920px){ .rt-how{grid-template-columns: 1fr; gap: 24px} }
+  @media (max-width: 1000px){ .nav-links{gap: 22px} }
   .dif{background: var(--bg)}
   .dif-head{display:grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end}
   @media (max-width: 920px){ .dif-head{grid-template-columns: 1fr} }
@@ -987,6 +996,7 @@
     <nav class="nav-links">
       <a href="#sobre">Sobre</a>
       <a href="#solucoes">Soluções</a>
+      <a href="#reforma">Reforma tributária</a>
       <a href="#ia">IA Aplicada</a>
       <a href="#setores">Setores</a>
       <a href="#contato" class="nav-cta">Fale com a gente →</a>
@@ -1095,7 +1105,7 @@
           Atendimento de quem conhece o SAP B1 por dentro — não por slide.
         </p>
         <div class="svc-tags">
-          <span>Implantação</span><span>Suporte</span><span>ADDONs</span>
+          <span>Implantação</span><span>Suporte</span><span>ADDONs</span><span>Reforma tributária</span>
         </div>
       </article>
 
@@ -1137,12 +1147,78 @@
   </div>
 </section>
 
+<!-- ═══════════════ REFORMA TRIBUTÁRIA ═══════════════ -->
+<section class="dif rt" id="reforma">
+  <div class="wrap">
+    <div class="dif-head">
+      <div>
+        <div class="eyebrow">03 / Reforma tributária</div>
+        <h2>Reforma tributária no SAP, sem depender de ferramenta de terceiros.</h2>
+      </div>
+      <p class="lede">
+        O SAP Business One precisa de novos códigos de imposto, de rotinas fiscais revisadas e,
+        em muitos casos, de atualização de versão. Fazemos o levantamento e a adequação com você,
+        conversando direto com quem executa.
+      </p>
+    </div>
+
+    <div class="dif-list">
+      <div class="dif-item">
+        <span class="dif-num">01</span>
+        <div>
+          <h4>Levantamento</h4>
+          <p>Mapeamos códigos de imposto, cadastros e rotinas fiscais, e dizemos o que precisa mudar e o que não precisa.</p>
+        </div>
+      </div>
+      <div class="dif-item">
+        <span class="dif-num">02</span>
+        <div>
+          <h4>Códigos de imposto</h4>
+          <p>Redefinimos e readequamos para IBS/CBS e para o fim do PIS/COFINS, inclusive nota de débito e de crédito.</p>
+        </div>
+      </div>
+      <div class="dif-item">
+        <span class="dif-num">03</span>
+        <div>
+          <h4>Atualização de versão</h4>
+          <p>Analisamos o ambiente e os add-ons, e fazemos o upgrade do SAP B1.</p>
+        </div>
+      </div>
+      <div class="dif-item">
+        <span class="dif-num">04</span>
+        <div>
+          <h4>Testes e acompanhamento</h4>
+          <p>Validamos em homologação antes de ir para produção e apoiamos a contabilidade no fechamento.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rt-how">
+      <h3>Como trabalhamos</h3>
+      <ul>
+        <li>Em vários casos dispensa robôs ou add-ons caros. Dizemos quando algum for mesmo necessário.</li>
+        <li>Atendimento direto, sem chamado nem fila.</li>
+      </ul>
+    </div>
+
+    <div class="rt-cta">
+      <p>Conte como está o seu ambiente hoje.</p>
+      <a class="btn btn-primary" href="#contato">
+        Fale com a gente
+        <span class="arr">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════════ IA — DESTAQUE ═══════════════ -->
 <section class="ai" id="ia">
   <div class="wrap">
     <div class="ai-head">
       <div>
-        <div class="eyebrow">03 / Diferencial competitivo</div>
+        <div class="eyebrow">04 / Diferencial competitivo</div>
         <h2>IA que <span class="hl">resolve problema</span> de verdade.</h2>
       </div>
       <p class="lede">
@@ -1195,7 +1271,7 @@
 <!-- ═══════════════ SETORES ═══════════════ -->
 <section class="setores" id="setores">
   <div class="wrap">
-    <div class="eyebrow">04 / Setores atendidos</div>
+    <div class="eyebrow">05 / Setores atendidos</div>
     <h2>Grandes setores. Mesmo nível de profundidade.</h2>
 
     <div class="setores-grid">
@@ -1253,7 +1329,7 @@
   <div class="wrap">
     <div class="dif-head">
       <div>
-        <div class="eyebrow">05 / Por que NR Costa</div>
+        <div class="eyebrow">06 / Por que NR Costa</div>
         <h2>O que você encontra aqui.</h2>
       </div>
       <p class="lede">
@@ -1315,7 +1391,7 @@
   <div class="cta-blob"></div>
   <div class="wrap cta-inner">
     <div>
-      <div class="eyebrow" style="color: var(--gold)">06 / Vamos conversar</div>
+      <div class="eyebrow" style="color: var(--gold)">07 / Vamos conversar</div>
       <h2>Vamos conversar sobre o <span class="em">seu projeto?</span></h2>
       <p class="lede" style="color: rgba(255,255,255,.75); margin-top: 24px">
         Conte rapidamente onde a sua operação está parada — SAP, integração, software,
